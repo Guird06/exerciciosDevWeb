@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+</html lang="pt-br">
+<heand>
+    <title>Cadastro de séries</title>
+    <meta charset="UTF-8">
+</heand>
+
+<body>
+    <header>
+        <h1>Cadastro de séries</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Insira os dados da sua série</h2>
+            <form action="https://postman-echo.com/post" method="post">
+                <p>Preencha o formulario para cadastrar a série</p>
+                <fieldset>
+                    <legend>Dados gerais</legend>
+                    <div>
+                        <label for="foto_id">Foto da capa:</label>
+                        <input type="file" name="capa" id="capa_id" accept="image/*">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="nome_id">Título:</label>
+                        <input id="titulo_id" name="titulo" type="text" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="genero_id">Genêro:</label>
+                        <select id="genero_id" name="genero" required>
+                            <option value="acao">Ação</option>
+                            <option value="comedia">Comédia</option>
+                            <option value="ficcao">Ficção</option>
+                            <option value="drama">Drama</option>
+                            <option value="romance">Romance</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="temporadas_id">Quantidade de temporadas:</label>
+                        <input id="temporadas_Id" name="temporadas" type="number" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="episodios_id">Quantidade de episódios:</label>
+                        <input id="episodios_id" name="episodios" type="number" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="data_lanc_id">Data de lançamento</label>
+                        <input id_="data_lanc_id" name="data_lanc" type="date" required>
+                    </div>
+                    <br>
+                    <legend>Classificação etária:</legend>
+                    <div>
+                        <input id="livre_id" name="livre" type="radio" value="livre">
+                        <label for="livre_id">Livre (AL): Conteúdo adequado para todas as idades.</label>
+                    </div>
+                    <div>
+                        <input id="dez_mais_id" name="dez_mais" type="radio" value="dez_mais">
+                        <label for="dez_mais_id">10 anos: Não recomendado para menores de dez anos.</label>
+                    </div>
+                    <div>
+                        <input id="quatorze_mais_id" name="quatorz_emais" type="radio" value="quatorze_mais">
+                        <label for="quatorze_mais_id">14 anos: Não recomendado para menores de quatorze anos.</label>
+                    </div>
+                    <div>
+                        <input id="dezesseis_mais_id" name="dezesseis_mais" type="radio" value="dezesseis_mais">
+                        <label for="dezesseismais_id">16 anos: Não recomendado para menores de dezesseis anos.</label>
+                    </div>
+                    <div>
+                        <input id="dezoito_mais_id" name="dezoito_mais" type="radio" value="dezoito_mais">
+                        <label for="dezoito_mais_id">18 anos: Não recomendado para menores de dezoito anos.</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+
+
+                    <legend>Elenco</legend>
+                    <div>
+                        <label for="qtd_atores_id"></label>Quantidade de atores:</label>
+                        <input id="qtd_atores_id" name="qtd_atores" type="number">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="ator_principal_id">Ator principal:</label>
+                        <input id="ator_principal_id" name="ator_principal" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="coadjuvantes_id">Coadjuvantes:</label><br>
+                        <textarea name="coadjuvantes" id="coadjuvantes_id" rows="4" cols="200"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="outros_elenco_id">Outros:</label><br>
+                        <textarea name="outros_elenco" id="outros_elenco_id"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sinopse da série</legend>
+                    <div>
+                        <label for="sinopse_id">Fale sobre a série</label><br>
+                        <textarea id="sinopse_id" name="sinopse" rows="4" cols="20"></textarea>
+                    </div>
+                </fieldset>
+                <br>
+                <div>
+                    <button type="reset">Limpar dados</button>
+                    <button type="submit">Enviar cadastro</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+
+    </footer>
+</body>
+
+
+</html>
