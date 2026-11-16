@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="./scripts/index.js" defer></script>
+    <link rel="stylesheet" href="./styles/global.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulário super complexo</h1>
+    </header>
+
+    <main>
+        <h2>Cadastro</h2>
+        <form id="cadastro" novalidate onsubmit="executar(event)">
+
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" name="nome">
+            <p id="erro-nome" class="oculto"></p>
+
+            <label for="idade">Idade*</label>
+            <input type="number" id="idade" name="idade">
+            <p id="erro-idade" class="oculto"></p>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email">
+            <p id="erro-email" class="oculto"></p>
+
+            <label for="celular">Celular*</label>
+            <input type="text" id="celular" name="celular" inputmode="tel" maxlength="15">
+            <p id="erro-celular" class="oculto"></p>
+
+            <label for="cpf">CPF*</label>
+            <input type="text" id="cpf" name="cpf" inputmode="numeric" maxlength="11">
+            <p id="erro-cpf" class="oculto"></p>
+
+            <label for="endereco">Endereço*</label>
+            <input type="text" id="endereco" name="endereco">
+            <p id="erro-endereco" class="oculto"></p>
+
+            <label for="cidade">Cidade*</label>
+            <input type="text" id="cidade" name="cidade">
+            <p id="erro-cidade" class="oculto"></p>
+
+            <label for="estado">Estado (UF)*</label>
+            <input type="text" id="estado" name="estado" maxlength="2">
+            <p id="erro-estado" class="oculto"></p>
+
+            <label for="cep">CEP*</label>
+            <input type="text" id="cep" name="cep" inputmode="numeric" maxlength="8">
+            <p id="erro-cep" class="oculto"></p>
+
+            <label for="profissao">Profissão*</label>
+            <input type="text" id="profissao" name="profissao">
+            <p id="erro-profissao" class="oculto"></p>
+
+            <label>
+                <input type="checkbox" name="termos" id="termos">
+                Li e aceito os termos
+                <p id="erro-termos" class="oculto"></p>
+            </label>
+
+            <button type="submit">
+                Enviar
+            </button>
+            <p id="concluido" class="oculto"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Projeto Javascript</p>
+    </footer>
+</body>
+
+</html>
